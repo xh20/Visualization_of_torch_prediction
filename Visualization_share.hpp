@@ -142,11 +142,12 @@ void Visualizer::plotRealTimeResults(const cv::Mat* dispImages_ptr,
     cv::vconcat(concatenatedMat, probBarRight.clone(), concatenatedMat);
     int heightConcat = concatenatedMat.rows;
 
+/* If you need it , create a legend as the same as the creatBarRT function
     cv::vconcat(concatenatedMat, spaceBar.clone(), concatenatedMat);
     cv::vconcat(concatenatedMat, spaceBar.clone(), concatenatedMat);
     cv::vconcat(concatenatedMat, legend.clone(), concatenatedMat);
     cv::vconcat(concatenatedMat, spaceBar.clone(), concatenatedMat);
-
+*/
     int arrowStart = index;
     cv::Point startPoint(arrowStart, height + 10);
     cv::Point endPoint(arrowStart, heightConcat);
